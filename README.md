@@ -30,10 +30,11 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 - Open terminal porgram
 - Clone this repositiory by running `git clone https://github.com/kimothokamau/bookstore_redux.git `
+- Navigate to the dirctory of the above repository
 
 
 ### Install
-- Run `npm install`
+- Run `npm install` to install all node/npm dependencies
 
 
 ### Usage
