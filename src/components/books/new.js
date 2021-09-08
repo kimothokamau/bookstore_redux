@@ -15,8 +15,8 @@ const New = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" name="title" placeholder="Title" />
-      <input type="text" name="author" placeholder="Author" />
+      <input type="text" name="title" placeholder="Title" required />
+      <input type="text" name="author" placeholder="Author" required />
       <button type="submit">Add</button>
     </form>
   );

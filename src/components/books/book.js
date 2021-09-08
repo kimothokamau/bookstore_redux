@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { removeBookAction } from '../../redux/books/books';
 
 const Book = ({ id, title, author }) => {
@@ -12,18 +12,24 @@ const Book = ({ id, title, author }) => {
 
   return (
     <li id={id}>
-    <div>
-      <h4>
-        { title }
-      </h4>
-      <p>
-        { author }
-      </p>
-    </div>
-    <button type="button" onClick={
-      () => handleRemove(id)}>Remove</button>
-  </li>
-  )
+      <div>
+        <h4>
+          { title }
+        </h4>
+        <p>
+          { author }
+        </p>
+      </div>
+      <button
+        type="button"
+        onClick={
+      () => handleRemove(id)
+}
+      >
+        Remove
+      </button>
+    </li>
+  );
 };
 
 Book.propTypes = {
