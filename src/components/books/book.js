@@ -17,7 +17,7 @@ const Book = ({ id, title, author }) => {
           { title }
         </h4>
         <p>
-          { author }
+          { category }
         </p>
       </div>
       <button

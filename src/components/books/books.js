@@ -7,12 +7,15 @@ const Books = () => {
 
   return (
     <ul>
-      {books.map((book) => {
-        const { id, title, author } = book;
-        return <Book key={id} id={id} title={title} author={author} />;
-      })}
+      {books.map((book) => (
+        <Book
+        key={book.item_id}
+        id={book.item_id}
+        title={book.title}
+        category={book.category}
+        />
+      ))}
     </ul>
-
   );
 };
 

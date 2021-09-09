@@ -21,7 +21,7 @@ const addBookAction = (title, category) => async (dispatch) => {
     category: `${category}`,
   };
 
-  await createNewBook(newBook);
+  await createBook(newBook);
 
   dispatch({
     type: ADD_BOOK,
@@ -44,14 +44,17 @@ const booksReducer = (state = [], action) => {
     case GET_BOOKS:
       return [...state, action.payload];
 
-    case ADD_BOOK: 
+    case ADD_BOOK: {
       return [...state, action.payload];
+    }
+      
 
-    case REMOVE_BOOK: 
+    case REMOVE_BOOK: {
       return state.filter((book) => book.item_id !== action.payload.item_id);
-
-      default:
-        return state;
+    }
+    
+    default:
+      return state;
 }
 };
 
