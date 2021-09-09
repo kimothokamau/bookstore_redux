@@ -1,9 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import hooks from '../../hooks/hooks';
 import Book from './book';
 
 const Books = () => {
   const books = useSelector((state) => state.books);
+  hooks();
 
   return (
     <ul>

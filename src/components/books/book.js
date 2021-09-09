@@ -13,27 +13,20 @@ const Book = ({ id, title, category }) => {
   return (
     <li id={id}>
       <div>
-        <h4>
+        <h2>
           { title }
-        </h4>
+        </h2>
         <p>
           { category }
         </p>
       </div>
-      <button
-        type="button"
-        onClick={
-      () => handleRemove(id)
-}
-      >
-        Remove
-      </button>
+      <button type="button" onClick={() => handleRemove(id)}>Remove</button>
     </li>
   );
 };
 
 Book.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
 };

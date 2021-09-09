@@ -42,7 +42,7 @@ const removeBookAction = (id) => async (dispatch) => {
 const booksReducer = (state = [], action) => {
   switch (action.type) {
     case GET_BOOKS:
-      return [...state, action.payload];
+      return [...state, ...action.payload];
 
     case ADD_BOOK: {
       return [...state, action.payload];
