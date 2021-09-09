@@ -47,15 +47,16 @@ const booksReducer = (state = [], action) => {
     case ADD_BOOK: {
       return [...state, action.payload];
     }
-      
 
     case REMOVE_BOOK: {
       return state.filter((book) => book.item_id !== action.payload.item_id);
     }
-    
+
     default:
       return state;
-}
+  }
 };
 
-export { getBooksAction, addBookAction, removeBookAction, booksReducer, };
+export {
+  getBooksAction, addBookAction, removeBookAction, booksReducer,
+};
