@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => (
   <nav>
-    <nav className="panel-bg">
+    <nav>
       <span className="Bookstore-CMS Text-Style-5">
         Bookstore CMS
       </span>
