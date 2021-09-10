@@ -20,14 +20,9 @@ const Book = ({ id, title, author }) => {
           { author }
         </p>
       </div>
-      <button
-        type="button"
-        onClick={
-      () => handleRemove(id)
-}
-      >
-        Remove
-      </button>
+      <button type="button" className="btn">Comments</button>
+      <button type="button" className="btn" onClick={() => handleRemove(id)}>Remove</button>
+      <button type="button" className="btn">Edit</button>
     </li>
   );
 };
