@@ -7,8 +7,9 @@ import '../../styles/books.css';
 const Books = () => {
   const books = useSelector((state) => state.books);
   hooks();
+
   return (
-    <ul className="panel-bg">
+    <ul>
       {books.map((book) => (
         <Book
           key={book.item_id}
@@ -18,7 +19,6 @@ const Books = () => {
         />
       ))}
     </ul>
-
   );
 };
 
