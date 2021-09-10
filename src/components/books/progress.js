@@ -13,7 +13,7 @@ function Progress() {
         </div>
       </div>
       <div className="d-flex flex-column align-items-center">
-        <span className="percentage fs-3">64%</span>
+        <span className="percentage fs-3">63%</span>
         <p className="status">Completed</p>
       </div>
     </div>
