@@ -62,3 +62,10 @@ title {
   text-align: center;
   color: #fff;
 }
+
+.new-panel-bg {
+  width: 75rem;
+  padding: 15px;
+  margin: 15px auto;
+}
+
