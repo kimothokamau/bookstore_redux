@@ -4,21 +4,21 @@ import { Link } from 'react-router-dom';
 const Nav = () => (
   <nav>
     <nav className="panel-bg">
-    <span className="Bookstore-CMS Text-Style-5">
-      Bookstore CMS
-    </span>
-    <Link to="/">
-      <span className="BOOKS Text-Style-7">
-        BOOKS
+      <span className="Bookstore-CMS Text-Style-5">
+        Bookstore CMS
       </span>
-    </Link>
+      <Link to="/">
+        <span className="BOOKS Text-Style-7">
+          BOOKS
+        </span>
+      </Link>
 
-    <Link to="/categories">
-      <span className="CATEGORIES Text-Style-7">
-        CATEGORIES
-      </span>
-    </Link>
-  </nav>
+      <Link to="/categories">
+        <span className="CATEGORIES Text-Style-7">
+          CATEGORIES
+        </span>
+      </Link>
+    </nav>
 
   </nav>
 );
