@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addBookAction } from '../../redux/books/books';
-import '../../styles/form.css';
+import '../../styles/new.css';
 
 const New = () => {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const New = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="panel-bg">
+    <form onSubmit={handleSubmit} className="new-panel-bg">
       <div>
         <span className="Title Text-Style-10">
           ADD NEW BOOK
